@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
+    <title>Registration</title>
+  </head>
+  <body>
+ <div class="container bg-white text-dark" id="bigBox">
+	  <h1 class="bg-white text-info">Mr. Morris' Paid Premium Content</h1>
+	  <h4 class="bg-white text-info">For only $4.99 a Month, gain access to all of Mr. Morris' finest, (student made) premium content!</h4>
+	 <h6 class="bg-white text-info">*does not include login page (sold separately)</h6>
+	 <div class="row">
+	 <div class="mb-2 col-6 border p-3" id="ageUname">
+		<div class="input-group">
+		<div class="input-group-prepend">
+			<span class="input-group-text" id="user">Username</span>	  
+		</div>
+			<input type="text" class="form-control" id="uname" placeholder="Username" aria-label="username" aria-describedby="basic-addon3">
+		</div>
+	 <div class="input-group">
+		<div class="input-group-prepend">
+			<span class="input-group-text" id="ageBox">Age</span>	  
+		</div>
+		 <input type="text" class="form-control" id="age" placeholder="Age" aria-label="age" aria-describedby="basic-addon4">
+		</div>
+		 </div>
+		 
+	 <div class="col-6 border p-3" id="genderQ">
+	 <div class="form-check">
+		 <label class="form-check-label">
+		 	<input type="radio" class="form-check-input" name="gender" value="male" id="m">Male
+		 </label>
+		 </div>
+		 <div class="form-check">
+		 <label class="form-check-label">
+		 	<input type="radio" class="form-check-input" name="gender" value="female" id="f">Female
+		 </label>
+		 </div>
+		 <div class="form-check">
+		 <label class="form-check-label">
+		 	<input type="radio" class="form-check-input" name="gender" value="other" id="o">Other
+		 </label>
+		 </div>
+	 </div>
+		 </div>
+		<div class="col-12 border p-3">
+		<div class="input-group">
+		<div class="input-group-prepend">
+			<span class="input-group-text" id="basic-addon1">Email</span>
+		</div>
+		<input type="text" class="form-control" id="email1" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+			</div>
+			<div class="input-group">
+		<div class="input-group-prepend">
+			<span class="input-group-text" id="emailConf">Confirm Email</span>
+		</div>
+		<input type="text" class="form-control" id="email2" placeholder="Confirm Email" aria-label="confirmEmail" aria-describedby="basic-addon2">
+			</div>
+		<div class="input-group">
+	  <div class="input-group-prepend">
+			<span class="input-group-text" id="passw">Password</span>
+		</div>
+		<input type="text" class="form-control" id="pword1" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
+			</div>
+			</div>
+	 <div class="col-12 border p-3">
+		 <div class="input-group">
+	 	<div class="input-group-prepend">
+		 	<span class="input-group-text" id="creditNum">Credit Card Number</span>
+			 </div>
+		 <input type="number" class="form-control" id="credNum" placeholder="Credit Card Number" aria-label="Credit Card Number" aria-describedby="basic-addon4">
+			 </div>
+		 <div class="input-group">
+	 	<div class="input-group-prepend">
+		 	<span class="input-group-text" id="creditSecurity">CVV</span>
+			 </div>
+		 <input type="number" class="form-control" id="cvv" placeholder="CVV" aria-label="CVV" aria-describedby="basic-addon5">
+			 </div>
+	<div class="input-group">
+	<div class="input-group-prepend">
+		<span class="input-group-text" id="expiryM">Expiry Month</span>
+		</div>
+	<select class="form-control bg-light text-secondary" id="expMonth">
+    	<option value="-1">Month</option>
+		<option value="0">January</option>
+    	<option value="1">February</option>
+		<option value="2">March</option>
+		<option value="3">April</option>
+		<option value="4">May</option>
+		<option value="5">June</option>
+		<option value="6">July</option>
+		<option value="7">August</option>
+		<option value="8">September</option>
+		<option value="9">October</option>
+		<option value="10">November</option>
+		<option value="11">December</option>
+  	</select>
+		 </div>	 
+		 <div class="input-group">
+	<div class="input-group-prepend">
+		<span class="input-group-text" id="expiryY">Expiry Year</span>
+		</div>
+  	<select class="form-control bg-light text-secondary" id="expYear">
+    	<option value="-1">Year</option>
+		<option value="0">2023</option>
+    	<option value="1">2024</option>
+		<option value="2">2025</option>
+		<option value="3">2026</option>
+		<option value="4">2027</option>
+		<option value="5">2028</option>
+	 </select>
+		 </div>
+	 </div>
+	 <div class="col-12 border p-3">
+	 <div class="input-group">
+		<div class="input-group-prepend">
+			<span class="input-group-text" id="botq"></span>
+		</div>
+		<input type="text" class="form-control" id="captcha" placeholder="CAPTCHA" aria-label="CAPTCHA" aria-describedby="basic-addon2">
+			</div>
+	 </div>
+		<button id="loginBttn" class="bg-info text-white rounded">Login!</button>
+		<div class="d-none" id="errormsg">
+		</div>
+	  </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script>
+	  let gDoc=(id)=>{return document.getElementById(id);}
+	  let loginClicked=(e)=>{
+		  let emailElem=gDoc("email1");
+		  let boolValidEmail=isValidEmail(emailElem.value);
+		  let confElem=gDoc("email2");
+		  let boolValidConf=isSameEmail(confElem.value);
+		  let pWordElem=gDoc("pword1");
+		  let boolValidPword=isValidPword(pWordElem.value);
+		  let ageElem=gDoc("age");
+		  let boolValidAge=isValidAge(ageElem.value);
+		  let unameElem=gDoc("uname");
+		  let boolValidUname=isValidUname(unameElem.value);
+		  let mathElem=gDoc("captcha");
+		  let boolValidMath=isValidMath(mathElem.value);
+		  let genderElem=gDoc("genderQ");
+		  let boolValidGender=isValidGender(genderElem.value)
+		  let ccnElem=gDoc("credNum");
+		  let boolValidCredit=isValidCCN(ccnElem.value);
+		  let cvvElem=gDoc("cvv");
+		  let boolValidCVV=isValidCVV(cvvElem.value);
+		  let errorD=gDoc("errormsg");
+		  let goodLogin=gDoc("successmsg")
+		  errorD.innerHTML="";
+		  if(boolValidPword===false){
+			  console.log("failp");
+			  goodLogin=false;
+			  errorD.className="d-block bg-danger text-light m-4 p-4 mt-2";
+			  errorD.innerHTML+="<ul>";
+			  errorD.innerHTML+="<li>Password must be at least 5 characters.</li>";
+			  errorD.innerHTML+="</ul>";
+			  pWordElem.select();
+			  $("#errormsg").fadeOut("slow");
+			  $("#errormsg").fadeIn("slow");
+		  }
+		  if(boolValidEmail===false){
+			  console.log("faile");
+			  goodLogin=false;
+			  errorD.className="d-block bg-danger text-light m-4 p-4 mt-2";
+			  errorD.innerHTML+="<ul>";
+			  errorD.innerHTML+="<li>Please enter a vaild email address.</li>";
+			  errorD.innerHTML+="</ul>";
+			  emailElem.select();
+			  $("#errormsg").fadeOut("slow");
+			  $("#errormsg").fadeIn("slow");
+		  }
+		  if(boolValidConf===false){
+			  console.log("failc");
+			  goodLogin=false;
+			  errorD.className="d-block bg-danger text-light m-4 p-4 mt-2";
+			  errorD.innerHTML+="<ul>";
+			  errorD.innerHTML+="<li>Please enter a valid, matching email address.</li>";
+			  errorD.innerHTML+="</ul>";
+			  confElem.select();
+			  $("#errormsg").fadeOut("slow");
+			  $("#errormsg").fadeIn("slow");
+		  }
+		  if(boolValidAge===false){
+			  console.log("faila");
+			  goodLogin=false;
+			  errorD.className="d-block bg-danger text-light m-4 p-4 mt-2";
+			  errorD.innerHTML+="<ul>";
+			  errorD.innerHTML+="<li>Please input age >18.</li>";
+			  errorD.innerHTML+="</ul>";
+			  $("#errormsg").fadeOut("slow");
+			  $("#errormsg").fadeIn("slow");
+		  }
+		  if(boolValidUname===false){
+			  console.log("failu");
+			  goodLogin=false;
+			  errorD.className="d-block bg-danger text-light m-4 p-4 mt-2";
+			  errorD.innerHTML+="<ul>";
+			  errorD.innerHTML+="<li>Please enter a valid username. (more than 5 characters)</li>";
+			  errorD.innerHTML+="<ul>";
+			  $("#errormsg").fadeOut("slow");
+			  $("#errormsg").fadeIn("slow");
+		  }
+		  if(boolValidMath===false){
+			  console.log("failm");
+			  goodLogin=false;
+			  errorD.className="d-block bg-danger text-light m-4 p-4 mt-2";
+			  errorD.innerHTML+="<ul>";
+			  errorD.innerHTML+="<li>Your math is genuinely awful. Are you sure you are human?</li>";
+			  errorD.innerHTML+="</ul>";
+			  $("#errormsg").fadeOut("slow");
+			  $("#errormsg").fadeIn("slow");
+		  }
+		  if(boolValidGender===false){
+			  console.log("failg");
+			  goodLogin=false;
+			  errorD.className="d-block bg-danger text-light m-4 p-4 mt-2";
+			  errorD.innerHTML+="<ul>";
+			  errorD.innerHTML+="<li>Please select a gender option.</li>";
+			  errorD.innerHTML+="</ul>";
+			  $("#errormsg").fadeOut("slow");
+			  $("#errormsg").fadeIn("slow");
+		  }
+		  if(boolValidCredit===false){
+			  console.log("failv");
+			  goodLogin=false;
+			  errorD.className="d-block bg-danger text-light m-4 p-4 mt-2";
+			  errorD.innerHTML+="<ul>";
+			  errorD.innerHTML+="<li>Your credit card number is invalid.</li>";
+			  errorD.innerHTML+="</ul>";
+			  $("#errormsg").fadeOut("slow");
+			  $("#errormsg").fadeIn("slow");
+		  }
+		  if(boolValidCVV===false){
+			  console.log("failr");
+			  goodLogin=false;
+			  errorD.className="d-block bg-danger text-light m-4 p-4 mt-2";
+			  errorD.innerHTML+="<ul>";
+			  errorD.innerHTML+="<li>Your CVV is invalid (must be 3 or 4 digits).</li>";
+			  errorD.innerHTML+="</ul>";
+			  $("#errormsg").fadeOut("slow");
+			  $("#errormsg").fadeIn("slow");
+		  }
+		  if(boolValidPword===true && boolValidEmail===true && boolValidConf===true && boolValidAge===true && boolValidUname===true && boolValidMath===true && boolValidGender===true && boolValidCredit===true && boolValidCVV===true){
+			  goodLogin=true;
+		  }
+		  if(goodLogin===true){
+			  console.log("success");
+		  $("#errormsg").removeClass("d-block bg-danger text-light m-4 p-4 mt-2");
+		  $("#errormsg").addClass("d-block bg-success text-light m-4 p-4 mt-2");
+		  errorD.innerHTML="Success! Thank you for registering!";
+		  $("#errormsg").fadeOut("slow");
+		  $("#errormsg").fadeIn("slow");
+		  }
+	  } //loginclicked
+	  let isValidPword=(str)=>{
+		  if(str.length<5){
+			  return false;
+		  }
+		  if(str.indexOf("$")>-1){
+			  return false;
+		  }
+		  if(str.indexOf("*")>-1){
+			  return false;
+		  }
+		  else{
+			  return true;
+		  }
+	  }
+	  let botAnswer=-1
+		let isValidEmail=(str)=>{
+		  if(str.length>=5 && str.indexOf("@")>-1 && str.indexOf(".")>str.indexOf("@")){
+			  return true;
+		  }
+		  else{
+			  return false;
+		  }
+		}
+		let isSameEmail=(str)=>{
+			if(gDoc("email1").value===gDoc("email2").value){
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+		let isValidUname=(str)=>{
+			if(str.length>=5){
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+		let isValidAge=(val)=>{
+			if(gDoc("age").value>=18){
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+		let isValidMath=(val)=>{
+			let mathElem=gDoc("captcha");
+			if(mathElem.value==botAnswer){
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+		let captchaGen=(e)=>{
+		  let botQuest=gDoc("botq");
+		  let c1=Math.floor(Math.random()*49)+2;
+		  let c2=Math.floor(Math.random()*31)+2;
+		  let c3=Math.floor(Math.random()*12)+1;
+		  //console.log(c1);
+		  //console.log(c2);
+		  //console.log(c3);
+		  botAnswer=(c2*c1)-c3;
+		  botQuest.innerHTML="What is ("+c1+"*"+c2+")-"+c3+" ?";
+		  console.log(botAnswer);
+	  }
+	  let isValidGender=(value)=>{
+		  let genderElemM=gDoc("m");
+		  let genderElemF=gDoc("f");
+		  let genderElemO=gDoc("o");
+		  if(genderElemM.checked===true){
+			  return true;
+		  }
+		  if(genderElemF.checked===true){
+			  return true;
+		  }
+		  if(genderElemO.checked===true){
+			  return true;
+		  }
+		  else{
+			  return false;
+		  }
+	  }
+	  let isValidCCN=(num)=>{
+		  var counter=0;
+		  var intSum=0;
+		  var allSum=0;
+		  var sumDigit=0;
+		  while(num>0){
+			digit=parseInt(num%10); //ones
+			console.log(digit+" digit");
+			num=parseInt(num/10); //tens
+			console.log(num+" num");
+			counter=counter+1;
+			console.log(counter+" count");
+			if(counter%2==0){
+				 digit=digit*2;
+				 if(digit>=10){
+				 	var ones=parseInt(digit%10);
+				 	console.log(ones+" ones");
+				 	var tens=parseInt(digit/10);
+				 	console.log(tens+" tens");
+				 	intSum=ones+tens;
+				 	console.log(intSum+" intSum");
+				 	allSum+=intSum;
+				 		}
+				 else{
+					allSum+=digit;
+				   	console.log(allSum+" alls");
+				}
+			}
+			else{
+				allSum+=digit;
+				}
+		  }
+				 if(allSum%10===0){
+				 	return true;
+				 }
+				 else{
+				 	return false;
+				 }
+			  }
+	  let isValidCVV=(num)=>{
+		  if(num.length===3 || num.length===4){
+				return true;
+			}
+			else{
+				return false;
+			}
+	  }
+   	  gDoc("loginBttn").addEventListener("click",loginClicked);
+	  window.addEventListener("load",captchaGen); 
+	  gDoc("loginBttn").addEventListener("click",captchaGen);
+	  </script>
+  </body>
+</html>
